@@ -15,7 +15,7 @@
     "emotion": "^9.2.8",
     "emotion-server": "^9.2.8",
     "gatsby": "next",
-    "gatsby-plugin-emotion": "^1.1.17",
+    "gatsby-plugin-emotion": "^2.0.0-rc.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-emotion": "^9.2.8"
