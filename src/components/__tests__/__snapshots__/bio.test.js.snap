@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bio renders correctly -- according to react-test-renderer 1`] = `
-<div
+<p
   data-testid="my-bio"
 >
-  My Bio!
-</div>
+  It's nice to meet you!
+</p>
 `;

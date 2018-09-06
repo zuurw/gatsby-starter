@@ -1,6 +1,6 @@
 {
   "name": "gatsby-my-hello-world",
-  "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes a test framework.",
+  "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes test frameworks for unit testing and integration testing.",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

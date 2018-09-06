@@ -1,3 +1,3 @@
 import React from "react"
 
-export default () => <div data-testid="my-bio">My Bio!</div>
+export default () => <p data-testid="my-bio">It's nice to meet you!  I'm Gatsby.</p>

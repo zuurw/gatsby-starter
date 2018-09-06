@@ -1,3 +1,9 @@
-import React from "react"
+import React from "react";
+import Bio from "../components/bio";
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <section>
+    <h1>Hello world!</h1>
+    <Bio />
+  </section>
+)
