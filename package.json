@@ -1,13 +1,16 @@
- {
+{
   "name": "gatsby-my-hello-world",
   "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes a test framework.",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "cy:open": "cypress open",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "test": "jest",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:watch": "jest --watchAll"
+
   },
   "dependencies": {
     "gatsby": "next",
@@ -21,11 +24,13 @@
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^23.4.2",
+    "cypress": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
     "jest-dom": "^1.12.0",
     "react-test-renderer": "^16.4.2",
-    "react-testing-library": "^5.0.1"
+    "react-testing-library": "^5.0.1",
+    "start-server-and-test": "^1.7.1"
   },
   "jest": {
     "globals": {
