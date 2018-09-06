@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly -- proving that react-emotion and jest-emotion are working 1`] = `
+.emotion-0 {
+  color: hotpink;
+}
+
+<div
+  className="emotion-0 emotion-1"
+>
+  This is hotpink.
+</div>
+`;

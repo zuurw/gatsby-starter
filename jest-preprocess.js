@@ -1,9 +1,10 @@
 const babelOptions = {
   presets: ["@babel/react", "@babel/env"],
   plugins: [
+    "emotion",
     "@babel/plugin-proposal-optional-chaining",
     "@babel/plugin-proposal-class-properties"
   ]
-};
+}
 
-module.exports = require("babel-jest").createTransformer(babelOptions);
+module.exports = require("babel-jest").createTransformer(babelOptions)

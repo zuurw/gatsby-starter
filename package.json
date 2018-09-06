@@ -10,12 +10,15 @@
     "test": "jest",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:watch": "jest --watchAll"
-
   },
   "dependencies": {
+    "emotion": "^9.2.8",
+    "emotion-server": "^9.2.8",
     "gatsby": "next",
+    "gatsby-plugin-emotion": "^1.1.17",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.8"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -24,10 +27,12 @@
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^23.4.2",
+    "babel-plugin-emotion": "^9.2.8",
     "cypress": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
     "jest-dom": "^1.12.0",
+    "jest-emotion": "^9.2.7",
     "react-test-renderer": "^16.4.2",
     "react-testing-library": "^5.0.1",
     "start-server-and-test": "^1.7.1"
