@@ -1,8 +1,6 @@
-module.exports = {
-	plugins: [
-		{
-			resolve: `gatsby-plugin-emotion`,
-			options: {}
-		}
-	]
-}
+export const plugins = [
+  {
+    resolve: `gatsby-plugin-emotion`,
+    options: {}
+  }
+]

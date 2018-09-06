@@ -4,6 +4,6 @@ exports[`Bio renders correctly -- according to react-test-renderer 1`] = `
 <p
   data-testid="my-bio"
 >
-  It's nice to meet you!  I'm Gatsby.
+  It is nice to meet you!  I am Gatsby.
 </p>
 `;

@@ -1,5 +1,5 @@
-import React from "react";
-import Bio from "../components/bio";
+import React from 'react'
+import Bio from '../components/bio'
 
 export default () => (
   <section>

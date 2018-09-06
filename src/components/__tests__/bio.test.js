@@ -1,15 +1,15 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import { render } from "react-testing-library"
-import Bio from "../bio";
+import React from 'react'
+import renderer from 'react-test-renderer'
+import { render } from 'react-testing-library'
+import Bio from '../bio'
 
-describe("Bio", () =>
-  it("renders correctly -- according to react-test-renderer", () => {
-    const tree = renderer.create(<Bio />).toJSON();
-    expect(tree).toMatchSnapshot();
+describe(`Bio`, () =>
+  it(`renders correctly -- according to react-test-renderer`, () => {
+    const tree = renderer.create(<Bio />).toJSON()
+    expect(tree).toMatchSnapshot()
   }),
-  it("renders correctly -- according to react-testing-library", () => {
-    const { getByTestId } = render(<Bio />);
-    expect(getByTestId("my-bio")).toHaveTextContent("It's nice to meet you!");
+  it(`renders correctly -- according to react-testing-library`, () => {
+    const { getByTestId } = render(<Bio />)
+    expect(getByTestId(`my-bio`)).toHaveTextContent(`It is nice to meet you!  I am Gatsby.`)
   })
 )
