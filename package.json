@@ -1,0 +1,15 @@
+{
+  "name": "gatsby-my-hello-world",
+  "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes a test framework.",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
