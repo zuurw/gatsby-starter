@@ -1,4 +1,4 @@
-{
+ {
   "name": "gatsby-my-hello-world",
   "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes a test framework.",
   "license": "MIT",
@@ -23,30 +23,33 @@
     "babel-jest": "^23.4.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
-    "react-test-renderer": "^16.4.2"
+    "jest-dom": "^1.12.0",
+    "react-test-renderer": "^16.4.2",
+    "react-testing-library": "^5.0.1"
   },
   "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
+    "globals": {
+      "__PATH_PREFIX__": ""
     },
-    "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
     "moduleNameMapper": {
       ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
       ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     },
+    "setupFiles": [
+      "<rootDir>/jest-loadershim.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-pre-process-beforeeach.js",
     "testPathIgnorePatterns": [
       "node_modules",
       ".cache"
     ],
+    "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
+    },
     "transformIgnorePatterns": [
       "node_modules/(?!(gatsby)/)"
-    ],
-    "globals": {
-      "__PATH_PREFIX__": ""
-    },
-    "testURL": "http://localhost",
-    "setupFiles": [
-      "<rootDir>/loadershim.js"
     ]
   }
 }

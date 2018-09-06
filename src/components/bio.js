@@ -1,3 +1,3 @@
 import React from "react"
 
-export default () => <div>My Bio!</div>
+export default () => <div data-testid="my-bio">My Bio!</div>
