@@ -48,7 +48,7 @@
     "setupFiles": [
       "<rootDir>/jest-loadershim.js"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/jest-pre-process-beforeeach.js",
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-preprocess-beforeeach.js",
     "testPathIgnorePatterns": [
       "node_modules",
       ".cache"
