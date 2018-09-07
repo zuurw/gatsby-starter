@@ -1,5 +1,5 @@
 <h1 align="center">Gatsby 'Hello World' Starter <em>plus</em> Jest &amp; Cypress</h1>
-<h2>Vanilla Gatsby (v2) Ready for TDD and Automated End-to-End Testing</h2>
+<h2 align="center">Vanilla Gatsby (v2) Ready for TDD and Automated End-to-End Testing</h2>
  
 Kick off your project with this boilerplate. This barebones starter ships with the main Gatsby files and the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest &amp; Cypress
 
