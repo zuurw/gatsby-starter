@@ -8,7 +8,12 @@ exports[`404 renders correctly 1`] = `
   <p>
     You might find what you're looking for at 
     <a
+      aria-current="page"
+      className=""
       href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={Object {}}
     >
       the index page
     </a>
