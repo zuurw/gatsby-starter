@@ -16,7 +16,7 @@ module.exports = {
 				trackingId: `UA-125425021-1`,
 			}
 		},
-		{
+    {
       resolve: `gatsby-plugin-manifest`,
 			options: {
         background_color: `#242943`,
@@ -29,6 +29,17 @@ module.exports = {
 				theme_color: `#ffffff`,
 			}
 		},
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
-  ]
+  ],
+	siteMetadata: {
+		defaultTitle: `Hello World`,
+		description: `Gatsby Starter Hello World for TDD`,
+		lang: `en`,
+		locale: `en-CA`,
+    icon: `src/images/512px-Home_font_awesome.svg.png`,
+		siteUrl: `http://localhost`,
+		titleTemplate: `%s — Gatsby Starter for TDD`,
+		twitterCreator: `@davesabine`
+	}
 };

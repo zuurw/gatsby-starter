@@ -1,7 +1,6 @@
 KEEP README.md up-to-date
 
 then install, for-each plugin, new plugins and tests found in scrum.works
-    "gatsby-plugin-manifest": "^1.0.27",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-plugin-sitemap": "^1.2.25",
