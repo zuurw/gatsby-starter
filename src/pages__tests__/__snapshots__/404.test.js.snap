@@ -1,23 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`404 renders correctly 1`] = `
-<div>
-  <h1>
-    Page not found
-  </h1>
-  <p>
-    You might find what you're looking for at 
-    <a
-      aria-current="page"
-      className=""
-      href="/"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      style={Object {}}
-    >
-      the index page
-    </a>
-    .
-  </p>
-</div>
+<section>
+  <div>
+    Loading (StaticQuery)
+  </div>
+  <article>
+    <h1>
+      Page not found
+    </h1>
+    <p>
+      You might find what you're looking for at 
+      <a
+        aria-current="page"
+        className=""
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={Object {}}
+      >
+        the index page
+      </a>
+      .
+    </p>
+  </article>
+</section>
 `;
