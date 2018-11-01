@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage renders correctly 1`] = `
+<article>
+  <h1>
+    Hello world!
+  </h1>
+  <p
+    data-testid="my-bio"
+  >
+    It is nice to meet you!  I am Gatsby.
+  </p>
+</article>
+`;

@@ -1,8 +1,30 @@
+const metaData = require(`../../gatsby-config`).siteMetadata
+
 describe("Homepage at baseUrl", () => {
 	it("exists", () => {
 		cy.visit("/")
 		cy.get("body").contains("Hello world!")
 		cy.url().should('include',"localhost")
+	})
+	it(`uses helmet for <head>`, () => {
+		cy.get(`html`).should(`have.attr`, `lang`, metaData.lang)
+		cy.get(`html title`).should(`have.text`, metaData.defaultTitle)
+		cy.get(`html meta[itemprop='description']`).should(`have.attr`, `content`, metaData.description)
+		cy.get(`html meta[itemprop='image']`).should(`have.attr`, `content`, metaData.icon)
+		cy.get(`html meta[itemprop='name']`).should(`have.attr`, `content`, metaData.defaultTitle)
+		cy.get(`html meta[name='description']`).should(`have.attr`, `content`, metaData.description)
+		cy.get(`html meta[name='twitter:card']`).should(`have.attr`, `content`, `summary_large_image`)
+		cy.get(`html meta[name='twitter:creator']`).should(`have.attr`, `content`, metaData.twitterCreator)
+		cy.get(`html meta[name='twitter:description']`).should(`have.attr`, `content`, metaData.description)
+		cy.get(`html meta[name='twitter:image']`).should(`have.attr`, `content`, metaData.icon)
+		cy.get(`html meta[name='twitter:image:alt']`).should(`have.attr`, `content`, metaData.defaultTitle)
+		cy.get(`html meta[name='twitter:title']`).should(`have.attr`, `content`, metaData.defaultTitle)
+		cy.get(`html meta[property='og:description']`).should(`have.attr`, `content`, metaData.description)
+		cy.get(`html meta[property='og:image']`).should(`have.attr`, `content`, metaData.icon)
+		cy.get(`html meta[property='og:locale']`).should(`have.attr`, `content`, metaData.locale)
+		cy.get(`html meta[property='og:title']`).should(`have.attr`, `content`, metaData.defaultTitle)
+		cy.get(`html meta[property='og:type']`).should(`have.attr`, `content`, `website`)
+		cy.get(`html meta[property='og:url']`).should(`have.attr`, `content`, metaData.siteUrl)
 	})
 	it('uses gatsby-plugin-google-analytics', () => {
 		const uacode = `UA-125425021-1`

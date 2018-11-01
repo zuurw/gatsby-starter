@@ -1,17 +1,20 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Layout from '../components/layout.js'
+import HtmlHead from '../components/htmlhead'
+import { Link } from 'gatsby'
 
-class FourOhFour extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Page not found</h1>
-        <p>
-          You might find what you're looking for at <Link to="/">the index page</Link>.
-        </p>
-      </div>
-    );
-  }
-}
+export const BodyMarkup = () => (
+	<article>
+		<h1>Page not found</h1>
+		<p>You might find what you're looking for at <Link to="/">the index page</Link>.</p>
+	</article>
+)
 
-export default FourOhFour;
+export const FourOhFourMarkup = props => (
+	<Layout>
+		<HtmlHead />
+		<BodyMarkup />
+	</Layout>
+)
+
+export default FourOhFourMarkup
