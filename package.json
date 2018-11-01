@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-my-hello-world",
-  "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes test frameworks for unit testing and integration testing.",
+  "name": "gatsby-my-hello-world-for-tdd",
+  "description": "Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site, where 'bare essentials' includes PWA features and test frameworks for unit testing, integration testing.",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -9,6 +9,7 @@
     "serve": "gatsby serve",
     "test": "jest",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "testprod:e2e": "start-server-and-test serve http://localhost:9000 cy:open",
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "emotion-server": "^9.2.12",
     "gatsby": "^2.0.36",
     "gatsby-plugin-emotion": "^2.0.6",
+    "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-offline": "^2.0.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",

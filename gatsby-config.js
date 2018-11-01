@@ -7,5 +7,15 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				anonymize: true,
+				exclude: ["/preview/**", "/do-not-track/me/too/"],
+				head: true,
+				respectDNT: true,
+				trackingId: `UA-125425021-1`,
+			}
+		},
   ]
 };
