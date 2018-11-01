@@ -10,6 +10,6 @@ describe(`Bio`, () =>
   }),
   it(`renders correctly -- according to react-testing-library`, () => {
     const { getByTestId } = render(<Bio />)
-    expect(getByTestId(`my-bio`)).toHaveTextContent(`It is nice to meet you!  I am Gatsby.`)
+    expect(getByTestId(`my-bio`)).toHaveTextContent(`It is nice to meet you! I am Gatsby.`)
   })
 )
