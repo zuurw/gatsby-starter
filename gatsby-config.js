@@ -44,13 +44,13 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 	siteMetadata: {
-		defaultTitle: `Hello World`,
+		defaultTitle: `Hello world!`,
 		description: `Gatsby Starter Hello World for TDD`,
 		lang: `en`,
 		locale: `en-CA`,
     icon: `src/images/512px-Home_font_awesome.svg.png`,
-		siteUrl: `http://localhost`,
-		titleTemplate: `%s — Gatsby Starter for TDD`,
+		siteUrl: `http://localhost`, //No trailing slash allowed
+		titleTemplate: `%s | Gatsby Starter for TDD`,
 		twitterCreator: `@davesabine`
 	}
 };

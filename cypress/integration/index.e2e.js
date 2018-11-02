@@ -8,7 +8,7 @@ describe("Homepage at baseUrl", () => {
 	})
 	it(`uses helmet for <head>`, () => {
 		cy.get(`html`).should(`have.attr`, `lang`, metaData.lang)
-		cy.get(`html title`).should(`have.text`, metaData.defaultTitle)
+		cy.get(`html title`).should(`have.text`, metaData.titleTemplate.replace(`%s`, metaData.defaultTitle))
 		cy.get(`html meta[itemprop='description']`).should(`have.attr`, `content`, metaData.description)
 		cy.get(`html meta[itemprop='image']`).should(`have.attr`, `content`, metaData.icon)
 		cy.get(`html meta[itemprop='name']`).should(`have.attr`, `content`, metaData.defaultTitle)

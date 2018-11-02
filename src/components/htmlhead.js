@@ -3,12 +3,17 @@ import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 export const HelmetMarkup = ({data}) => {
+	const pageTitle = data.site.siteMetadata.defaultTitle
 	return (
-		<Helmet>
+		<Helmet 
+		title={pageTitle} 
+		defaultTitle={pageTitle} 
+		titleTemplate={data.site.siteMetadata.titleTemplate} 
+		>
 			<html lang={data.site.siteMetadata.lang} />
 			<meta itemprop='description' content={data.site.siteMetadata.description} />
 			<meta itemprop='image' content={data.site.siteMetadata.icon} />
-			<meta itemprop='name' content={data.site.siteMetadata.defaultTitle} />
+			<meta itemprop='name' content={pageTitle} />
 			<meta name='description' content={data.site.siteMetadata.description} />
 			<meta name='twitter:card' content='summary_large_image' />
 			<meta name='twitter:creator' content={data.site.siteMetadata.twitterCreator} />
@@ -22,7 +27,6 @@ export const HelmetMarkup = ({data}) => {
 			<meta property='og:title' content={data.site.siteMetadata.defaultTitle} />
 			<meta property='og:type' content='website' />
 			<meta property='og:url' content={data.site.siteMetadata.siteUrl} />
-			<title>{data.site.siteMetadata.defaultTitle}</title>
 		</Helmet>
 	)
 }
@@ -39,6 +43,7 @@ export const HtmlHead = props => (
 						locale
 						icon
 						siteUrl
+						titleTemplate
 						twitterCreator
 					}
 				}
