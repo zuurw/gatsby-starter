@@ -46,7 +46,7 @@ describe("Homepage at baseUrl", () => {
 		.then((window) => {
 			const currentHref = window.location.href
 			const headHtml = window.document.head.innerHTML
-			assert.notEqual(headHtml.indexOf(gtmcode),-1,`in production`)
+			assert.notEqual(headHtml.indexOf(gtmcode),-1)
 		})
 	})
 })

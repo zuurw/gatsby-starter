@@ -4,12 +4,13 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "cy:open": "cypress open",
+    "cy:open-dev": "cypress open --config baseUrl=http://localhost:8000",
+    "cy:open-prod": "cypress open --config baseUrl=http://localhost:9000",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "test": "jest",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "testprod:e2e": "start-server-and-test serve http://localhost:9000 cy:open",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open-dev",
+    "test-prod:e2e": "gatsby build && start-server-and-test serve http://localhost:9000 cy:open-prod",
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
