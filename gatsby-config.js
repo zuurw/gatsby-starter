@@ -1,3 +1,32 @@
+const sitesConfig = {
+	sites: {
+		default: {
+			siteMetadata: {
+				defaultTitle: `Hello world!`,
+				description: `Gatsby Starter Hello World for TDD`,
+				lang: `en`,
+				locale: `en-CA`,
+				icon: `src/images/512px-Home_font_awesome.svg.png`,
+				siteUrl: `http://localhost`, //No trailing slash allowed
+				titleTemplate: `%s | Default!`,
+				twitterCreator: `@davesabine`
+			}
+		},
+		notDefault: {
+			siteMetadata: {
+				defaultTitle: `Hello other world!`,
+				description: `Gatsby Starter Hello World for TDD`,
+				lang: `en`,
+				locale: `en-CA`,
+				icon: `src/images/512px-Home_font_awesome.svg.png`,
+				siteUrl: `http://localhost`, //No trailing slash allowed
+				titleTemplate: `%s | Not Default!`,
+				twitterCreator: `@davesabine`
+			}
+		}
+	}
+}
+
 module.exports = {
   plugins: [
     {
@@ -43,14 +72,5 @@ module.exports = {
 		`gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
   ],
-	siteMetadata: {
-		defaultTitle: `Hello world!`,
-		description: `Gatsby Starter Hello World for TDD`,
-		lang: `en`,
-		locale: `en-CA`,
-    icon: `src/images/512px-Home_font_awesome.svg.png`,
-		siteUrl: `http://localhost`, //No trailing slash allowed
-		titleTemplate: `%s | Gatsby Starter for TDD`,
-		twitterCreator: `@davesabine`
-	}
+	siteMetadata: sitesConfig.sites[`default`].siteMetadata
 };
