@@ -12,7 +12,7 @@ export const BodyMarkup = ({message}) => (
 
 export const IndexMarkup = props => (
 <Layout>
-	<HtmlHead />
+	<HtmlHead title="Home" />
 	<BodyMarkup message='Hello world!' />
 </Layout>	
 )

@@ -9,11 +9,12 @@ describe("404 page", () => {
 		})
 	})
 	it(`uses helmet for <head>`, () => {
+		const pageTitle = `Ooops.`
 		cy.get(`html`).should(`have.attr`, `lang`, metaData.lang)
-		cy.get(`html title`).should(`have.text`, metaData.titleTemplate.replace(`%s`, metaData.defaultTitle))
+		cy.get(`html title`).should(`have.text`, metaData.titleTemplate.replace(`%s`, pageTitle))
 		cy.get(`html meta[itemprop='description']`).should(`have.attr`, `content`, metaData.description)
 		cy.get(`html meta[itemprop='image']`).should(`have.attr`, `content`, metaData.icon)
-		cy.get(`html meta[itemprop='name']`).should(`have.attr`, `content`, metaData.defaultTitle)
+		cy.get(`html meta[itemprop='name']`).should(`have.attr`, `content`, pageTitle)
 		cy.get(`html meta[name='description']`).should(`have.attr`, `content`, metaData.description)
 		cy.get(`html meta[name='twitter:card']`).should(`have.attr`, `content`, `summary_large_image`)
 		cy.get(`html meta[name='twitter:creator']`).should(`have.attr`, `content`, metaData.twitterCreator)

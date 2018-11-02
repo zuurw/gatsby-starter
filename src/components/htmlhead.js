@@ -2,8 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-export const HelmetMarkup = ({data}) => {
-	const pageTitle = data.site.siteMetadata.defaultTitle
+export const HelmetMarkup = ({data, title}) => {
+	const pageTitle = title || data.site.siteMetadata.defaultTitle
 	return (
 		<Helmet 
 		title={pageTitle} 

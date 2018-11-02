@@ -12,7 +12,7 @@ export const BodyMarkup = () => (
 
 export const FourOhFourMarkup = props => (
 	<Layout>
-		<HtmlHead />
+		<HtmlHead title="Ooops." />
 		<BodyMarkup />
 	</Layout>
 )
