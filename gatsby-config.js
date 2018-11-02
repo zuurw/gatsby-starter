@@ -16,9 +16,18 @@ module.exports = {
 				trackingId: `UA-125425021-1`,
 			}
 		},
-    {
-      resolve: `gatsby-plugin-manifest`,
+		{
+			resolve: `gatsby-plugin-google-tagmanager`,
 			options: {
+				id: `GTM-W9DNBKC`,
+				includeInDevelopment: true,
+				gtmAuth: `9qdcleHZMeragP2aZTYTpw`,
+				gtmPreview: `env-5`,
+			},
+		},
+		{
+      resolve: `gatsby-plugin-manifest`,
+	 		options: {
         background_color: `#242943`,
 				display: `minimal-ui`,
 				icon: `src/images/512px-Home_font_awesome.svg.png`,

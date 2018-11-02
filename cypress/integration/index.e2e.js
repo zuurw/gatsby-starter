@@ -39,4 +39,13 @@ describe("Homepage at baseUrl", () => {
 			}
 		})
 	})
+	it('uses gatsby-plugin-google-tagmanager', () => {
+		const gtmcode = `GTM-W9DNBKC`
+		cy.visit(`/`)
+		.then((window) => {
+			const currentHref = window.location.href
+			const headHtml = window.document.head.innerHTML
+			assert.notEqual(headHtml.indexOf(gtmcode),-1,`in production`)
+		})
+	})
 })
