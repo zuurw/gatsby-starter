@@ -1,9 +1,9 @@
-<h1 align="center">Gatsby 'Hello World' Starter <em>plus</em> Jest &amp; Cypress</h1>
-<h2 align="center">Vanilla Gatsby (v2) Ready for TDD and Automated End-to-End Testing</h2>
+<h1 align="center">Gatsby 'Hello World' Starter by David Sabine</h1>
+<h2 align="center">Vanilla Gatsby (v2), <em>plus</em> PWA plugins, basic SEO plugins, and test tools: Jest &amp; Cypress</h2>
  
 Kick off your project with this boilerplate. This barebones starter ships with the main Gatsby files and the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest &amp; Cypress
 
-Basically, This starter combines [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) with [the official testing guides](https://next.gatsbyjs.org/docs/testing/). The result is a vanilla version of Gatsby ready for TDD and automated end-to-end testing.
+Basically, This starter combines [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) with [the official testing guides](https://next.gatsbyjs.org/docs/testing/) and the SEO-related plugins to produce appropriate &lt;HEAD&gt; content and manifest, sitemap, and robots files.
   
 
 ## 🚀 Quick start
@@ -28,7 +28,7 @@ Use the Gatsby CLI to create a new site, specifying this starter.
 
 # create a new Gatsby site using this starter
 
-gatsby new high-quality-site https://github.com/davidsabine/gatsby-starter-hello-world-for-tdd
+gatsby new my-gatsby-site https://github.com/davidsabine/gatsby-starter
 
 ```
 
@@ -38,7 +38,7 @@ Navigate into your new site’s directory and start it up.
 
 ```sh
 
-cd high-quality-site
+cd my-gatsby-site
 
 npm install
 
@@ -60,17 +60,22 @@ yarn test:e2e
 # will update as you edit code. It's awesome.
 
 
+# or to run end-to-end tests with Cypress, against the production build
+
+yarn test-prod:e2e
+
+
 # or, as with other starters, you can...
 
-gatsby develop
+yarn develop
 
 ```
 
 4.  **Open the source code and start editing!**
 
-Your site is now running at `http://localhost:8000`!
+After running `yarn develop` or `gatsby develop`, your site is now running at `http://localhost:8000`!
 
-Open the `high-quality-site` directory in your code editor of choice and look for these files to read the tests:
+Open the `my-gatsby-site` directory in your code editor of choice and look for these files to read the tests:
 
 - Any files in a folder called `__tests__`
 - Any files called `*.test.js` or `*.spec.js`
