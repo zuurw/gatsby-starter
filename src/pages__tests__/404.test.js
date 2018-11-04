@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import FourOhFour from '../pages/404'
+import FourOhFourMarkup from '../pages/404'
 
 describe(`404`, () =>
   it(`renders correctly`, () => {
-    const tree = renderer.create(<FourOhFour />).toJSON()
+    const tree = renderer.create(<FourOhFourMarkup />).toJSON()
     expect(tree).toMatchSnapshot()
   }),
 )

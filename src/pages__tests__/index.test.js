@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import {BodyMarkup as HomePage} from '../pages/index'
+import IndexMarkup from '../pages/index'
 
 describe(`HomePage`, () =>
   it(`renders correctly`, () => {
-    const tree = renderer.create(<HomePage message='Hello world!' />).toJSON()
+    const tree = renderer.create(<IndexMarkup />).toJSON()
     expect(tree).toMatchSnapshot()
   }),
 )

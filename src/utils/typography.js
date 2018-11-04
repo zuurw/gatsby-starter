@@ -3,7 +3,7 @@ import gray from 'gray-percentage'
 
 const typography = new Typography(
 	{
-		baseFontSize: `16px`,
+		baseFontSize: `18px`,
 		baseLineHeight: 1.62,
 		googleFonts: [
 			{
@@ -15,7 +15,7 @@ const typography = new Typography(
 			`Poppins`,
 			`sans-serif`,
 		],
-		scaleRatio: 2,
+		scaleRatio: 2.66,
 		bodyWeight: 300,
 		headerWeight: 600,
 		boldWeight: `bold`,

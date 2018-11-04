@@ -4,9 +4,9 @@ class Template extends React.Component {
   render() {
     const { children } = this.props
     return (
-      <section>
+      <div>
         {children}
-      </section>
+      </div>
     )
   }
 }
