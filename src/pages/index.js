@@ -1,5 +1,6 @@
 import React from 'react'
 import Bio from '../components/bio'
+import Footer from '../components/footer'
 import HtmlHead from '../components/htmlhead'
 import Layout from '../components/layout'
 
@@ -10,7 +11,7 @@ export const IndexMarkup = props => (
 			<h1>Hello world!</h1>
 		</header>
 		<Bio />
-		<footer />
+		<Footer />
 	</Layout>
 )
 

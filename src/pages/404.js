@@ -1,6 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout.js'
+import Footer from '../components/footer'
 import HtmlHead from '../components/htmlhead'
+import Layout from '../components/layout.js'
 import { Link } from 'gatsby'
 
 export const FourOhFourMarkup = props => (
@@ -12,7 +13,7 @@ export const FourOhFourMarkup = props => (
 		<main>
 			<p>You might find what you're looking for at <Link to="/">the index page</Link>.</p>
 		</main>
-		<footer />
+		<Footer />
 	</Layout>
 )
 

@@ -1,7 +1,7 @@
 <h1 align="center">Gatsby 'Hello World' Starter by David Sabine</h1>
 <h2 align="center">Vanilla Gatsby (v2), <em>plus</em> PWA plugins, basic SEO plugins, and test tools: Jest &amp; Cypress</h2>
  
-Kick off your project with this boilerplate. This barebones starter ships with the main Gatsby files and the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest &amp; Cypress
+Kick off your project with this boilerplate. This starter ships with the main Gatsby files and the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest &amp; Cypress
 
 Basically, This starter combines [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) with [the official testing guides](https://next.gatsbyjs.org/docs/testing/) and the SEO-related plugins to produce appropriate &lt;HEAD&gt; content and manifest, sitemap, and robots files.
   

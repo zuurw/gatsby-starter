@@ -5,7 +5,7 @@ class Template extends React.Component {
     const { children } = this.props
     return (
       <div>
-        {children}
+        { children }
       </div>
     )
   }

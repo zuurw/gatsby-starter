@@ -1,9 +1,10 @@
 const metaData = require(`../../gatsby-config`).siteMetadata
 
 describe("Homepage at baseUrl", () => {
-	it("exists", () => {
+	it("has appropriate layout markup", () => {
 		cy.visit("/")
-		cy.get("body").contains("Hello world!")
+		cy.get(`header`).contains("Hello world!")
+		cy.get(`footer`).should(`be.not.null`)
 		cy.url().should('include',"localhost")
 	})
 })
