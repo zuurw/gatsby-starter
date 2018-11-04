@@ -70,7 +70,8 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
 		`gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
+		`gatsby-plugin-typography`,
+		`gatsby-plugin-offline`,
   ],
 	siteMetadata: sitesConfig.sites[`default`].siteMetadata
 };
