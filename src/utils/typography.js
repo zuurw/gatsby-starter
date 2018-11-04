@@ -1,31 +1,27 @@
 import Typography from 'typography'
-import type { OptionsType } from 'Types'
 import gray from 'gray-percentage'
 
 const typography = new Typography(
 	{
 		baseFontSize: `16px`,
-		baseLineHeight: 1.5,
-		bodyFontFamily: [
-			'-apple-system',
-			'BlinkMacSystemFont',
-			'Segoe UI',
-			'Roboto',
-			'Oxygen',
-			'Ubuntu',
-			'Cantarell',
-			'Fira Sans',
-			'Droid Sans',
-			'Helvetica Neue',
-			'sans-serif',
+		baseLineHeight: 1.62,
+		googleFonts: [
+			{
+				name: `Poppins`,
+				styles: [`100`,`200`,`400`,`300`,`500`,`600`,`700`],
+			}
 		],
-		scaleRatio: 2.25,
-		bodyWeight: 400,
-		headerWeight: 500,
-		boldWeight: 'bold',
+		bodyFontFamily: [
+			`Poppins`,
+			`sans-serif`,
+		],
+		scaleRatio: 2,
+		bodyWeight: 300,
+		headerWeight: 600,
+		boldWeight: `bold`,
 		overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
 			body: {
-				color: gray(23, 204),
+				color: gray(23, `warm`),
 			},
 			h1: scale(4 / 4),
 			h2: scale(3 / 4),
@@ -46,9 +42,9 @@ const typography = new Typography(
 			},
 			'blockquote cite': {
 			...adjustFontSizeTo(options.baseFontSize),
-				color: gray(54, 204),
+				color: gray(54, `204`),
 				fontWeight: options.bodyWeight,
-				fontStyle: 'normal',
+				fontStyle: `normal`,
 			}
 		})
 	}
