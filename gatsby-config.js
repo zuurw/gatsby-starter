@@ -70,8 +70,13 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
 		`gatsby-plugin-sitemap`,
-		`gatsby-plugin-typography`,
+		{
+			resolve: `gatsby-plugin-typography`,
+			options: {
+				pathToConfigModule: `src/utils/typography`,
+			}
+		},
 		`gatsby-plugin-offline`,
   ],
-	siteMetadata: sitesConfig.sites[`default`].siteMetadata
-};
+	siteMetadata: sitesConfig.sites[`default`].siteMetadata,
+}
