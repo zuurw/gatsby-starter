@@ -1,20 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomePage renders correctly 1`] = `
-<div>
-  <div>
-    Loading (StaticQuery)
-  </div>
-  <header>
-    <h1>
-      Hello world!
-    </h1>
-  </header>
-  <p
-    data-testid="my-bio"
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.emotion-0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-1 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<div
+  className="emotion-2"
+>
+  <div
+    className="emotion-0"
   >
-    It is nice to meet you!  I am Gatsby.
-  </p>
-  <footer />
+    <div>
+      Loading (StaticQuery)
+    </div>
+    <header>
+      <h1>
+        Hello world!
+      </h1>
+    </header>
+    <main>
+      <p
+        data-testid="my-bio"
+      >
+        It is nice to meet you!  I am Gatsby.
+      </p>
+    </main>
+  </div>
+  <footer
+    class="emotion-1"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "
+		<a rel=\\"license\\" href=\\"http://creativecommons.org/licenses/by-sa/4.0/\\"><img alt=\\"Creative Commons Licence\\" style=\\"border-width:0\\" src=\\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\\" /></a><br /><span xmlns:dct=\\"http://purl.org/dc/terms/\\" property=\\"dct:title\\">DavidSabine/gatsby-starter</span> by <a xmlns:cc=\\"http://creativecommons.org/ns#\\" href=\\"https://gatsby-starter.davesabine.com\\" property=\\"cc:attributionName\\" rel=\\"cc:attributionURL\\">David Sabine</a> is licensed under a <a rel=\\"license\\" href=\\"http://creativecommons.org/licenses/by-sa/4.0/\\">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct=\\"http://purl.org/dc/terms/\\" href=\\"https://github.com/DavidSabine/gatsby-starter\\" rel=\\"dct:source\\">https://github.com/DavidSabine/gatsby-starter</a>.
+	",
+      }
+    }
+  />
 </div>
 `;

@@ -13,7 +13,6 @@ export const FourOhFourMarkup = props => (
 		<main>
 			<p>You might find what you're looking for at <Link to="/">the index page</Link>.</p>
 		</main>
-		<Footer />
 	</Layout>
 )
 
