@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { HelmetMarkup }  from '../htmlhead'
+import HtmlHead  from '../htmlhead'
 const metaData = require(`../../../gatsby-config`).siteMetadata
 
-describe(`HelmetMarkup`, () =>
+describe(`HtmlHead`, () =>
   it(`renders correctly`, () => {
     const data = {
       site: {
@@ -19,7 +19,7 @@ describe(`HelmetMarkup`, () =>
         }
       }
     }
-    const tree = renderer.create(<HelmetMarkup data={data} />).toJSON()
+    const tree = renderer.create(<HtmlHead data={data} />).toJSON()
       expect(tree).toMatchSnapshot()
   })
 )

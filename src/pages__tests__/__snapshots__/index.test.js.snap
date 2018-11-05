@@ -31,9 +31,6 @@ exports[`HomePage renders correctly 1`] = `
   <div
     className="emotion-0"
   >
-    <div>
-      Loading (StaticQuery)
-    </div>
     <header>
       <h1>
         Hello world!
@@ -48,7 +45,7 @@ exports[`HomePage renders correctly 1`] = `
     </main>
   </div>
   <footer
-    class="emotion-1"
+    className="emotion-1"
     dangerouslySetInnerHTML={
       Object {
         "__html": "
