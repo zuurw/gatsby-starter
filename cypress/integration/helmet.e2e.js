@@ -1,26 +1,12 @@
 const metaData = require(`../../gatsby-config`).siteMetadata
-
-const pages = [
-	{
-		path: '/',
-		title: `Home`
-	},
-	{
-		path: '/404/',
-		title: `Ooops.`
-	},
-	{
-		path: '/dashboard/',
-		title: `Dashboard`
-	}
-]
+const pages = require(`../../test-config`).pages
 
 describe(`helmet component contains valid <head> markup`, () => {
 
-	pages.forEach(element => {
-		it(`at `+ element.path, () => {
-			cy.visit(element.path, {failOnStatusCode: false })
-			const pageTitle = element.title
+	for (const pageData in pages) {
+		it(`at `+ pages[pageData].path, () => {
+			cy.visit(pages[pageData].path, {failOnStatusCode: false })
+			const pageTitle = pages[pageData].title
 			cy.get(`html`).should(`have.attr`, `lang`, metaData.lang)
 			cy.get(`html title`).should(`have.text`, metaData.titleTemplate.replace(`%s`, pageTitle))
 			cy.get(`html meta[itemprop='description']`).should(`have.attr`, `content`, metaData.description)
@@ -39,6 +25,6 @@ describe(`helmet component contains valid <head> markup`, () => {
 			cy.get(`html meta[property='og:title']`).should(`have.attr`, `content`, metaData.defaultTitle)
 			cy.get(`html meta[property='og:type']`).should(`have.attr`, `content`, `website`)
 			cy.get(`html meta[property='og:url']`).should(`have.attr`, `content`, metaData.siteUrl)
-		})	
-	})
+		})
+	}
 })

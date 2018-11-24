@@ -27,11 +27,16 @@ export class Dashboard extends React.Component {
 		const { children } = this.props
 		return (
 			<Layout>
-				<HtmlHead title="Dashboard" />
-				<Router>
-					<Profile path='/dashboard/profile' />
-					<Login path='/dashboard/login' />
-				</Router>
+				<HtmlHead title='Dashboard' />
+				<header>
+					<h1>Dashboard</h1>
+				</header>
+				<main>
+					<Router>
+						<Profile path='/dashboard/profile' />
+						<Login path='/dashboard/login' />
+					</Router>
+				</main>
 			</Layout>
 		)
 	}

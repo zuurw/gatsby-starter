@@ -30,7 +30,14 @@ exports[`Dashboard renders correctly 1`] = `
 >
   <div
     className="emotion-0"
-  />
+  >
+    <header>
+      <h1>
+        Dashboard
+      </h1>
+    </header>
+    <main />
+  </div>
   <footer
     className="emotion-1"
     dangerouslySetInnerHTML={

@@ -1,0 +1,11 @@
+const metaData = require(`../../gatsby-config`).siteMetadata
+const pageData = require(`../../test-config`).pages.dashboard
+
+describe(`Dashboard`, () => {
+	it(`has appropriate layout markup`, () => {
+		cy.visit(pageData.path)
+		cy.get(`header`).contains(pageData.title)
+		cy.get(`footer`).should(`be.not.null`)
+		cy.url().should(`include`,`localhost`)
+	})
+})

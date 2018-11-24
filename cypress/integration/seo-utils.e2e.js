@@ -1,34 +1,23 @@
+const pages = require(`../../test-config`).pages
+const uacode = `UA-125425021-1`
+
 describe(`gatsby-plugin-google-tagmanager`, () => {
-	const urls = [
-		`/`,
-		`/404/`,
-		`/dashboard/`
-	]
-	const uacode = `UA-125425021-1`
-	
-	urls.forEach(element => {
-		it(`is included in page: ` + element, () => {
+	for (const pageData in pages) {
+		it(`is included in page: ` + pages[pageData].path, () => {
 			const gtmcode = `GTM-W9DNBKC`
-			cy.visit(`/`).then(window => {
+			cy.visit(pages[pageData].path).then(window => {
 				const currentHref = window.location.href
 				const headHtml = window.document.head.innerHTML
 				assert.notEqual(headHtml.indexOf(gtmcode), -1)
 			})
 		})
-	})
+	}
 })
 
 describe(`gatsby-plugin-google-analytics`, () => {
-	const urls = [
-		`/`,
-		`/404/`,
-		`/dashboard/`
-	]
-	const uacode = `UA-125425021-1`
-	
-	urls.forEach(element => {
-		it(`is included in page: ` + element, () => {
-			cy.visit(element).then(window => {
+	for (const pageData in pages) {
+		it(`is included in page: ` + pages[pageData].path, () => {
+			cy.visit(pages[pageData].path).then(window => {
 				const currentHref = window.location.href
 				const headHtml = window.document.head.innerHTML
 				if (currentHref.indexOf(`:8000`) === -1) {
@@ -38,7 +27,7 @@ describe(`gatsby-plugin-google-analytics`, () => {
 				}
 			})
 		})
-	})
+	}
 })
 
 describe(`robots document`, () => {
