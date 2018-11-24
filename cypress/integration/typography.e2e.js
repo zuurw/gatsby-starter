@@ -2,7 +2,8 @@ describe(`typography.js`, () => {
 
 	const urls = [
 		`/`,
-		`/404/`
+		`/404/`,
+		`/dashboard/`
 	]
 
 	urls.forEach(element => {

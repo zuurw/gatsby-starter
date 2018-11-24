@@ -30,6 +30,12 @@ const sitesConfig = {
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: {
+        prefixes: [`/dashboard/*`]
+      }
+    },
+    {
       resolve: `gatsby-plugin-emotion`,
       options: {
         // Accepts all options defined by `babel-plugin-emotion` plugin.

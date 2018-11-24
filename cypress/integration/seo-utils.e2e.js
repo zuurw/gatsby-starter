@@ -1,5 +1,9 @@
 describe(`gatsby-plugin-google-tagmanager`, () => {
-	const urls = [`/`, `/404/`]
+	const urls = [
+		`/`,
+		`/404/`,
+		`/dashboard/`
+	]
 	const uacode = `UA-125425021-1`
 	
 	urls.forEach(element => {
@@ -15,7 +19,11 @@ describe(`gatsby-plugin-google-tagmanager`, () => {
 })
 
 describe(`gatsby-plugin-google-analytics`, () => {
-	const urls = [`/`, `/404/`]
+	const urls = [
+		`/`,
+		`/404/`,
+		`/dashboard/`
+	]
 	const uacode = `UA-125425021-1`
 	
 	urls.forEach(element => {

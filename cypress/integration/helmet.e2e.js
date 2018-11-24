@@ -8,6 +8,10 @@ const pages = [
 	{
 		path: '/404/',
 		title: `Ooops.`
+	},
+	{
+		path: '/dashboard/',
+		title: `Dashboard`
 	}
 ]
 
