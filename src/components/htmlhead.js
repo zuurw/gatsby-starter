@@ -1,5 +1,4 @@
 import React from 'react'
-// import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 const data = require(`../../gatsby-config`).siteMetadata
 

@@ -28,6 +28,7 @@
     "gatsby-plugin-sitemap": "^2.0.2",
     "gatsby-plugin-stripe": "^1.0.1",
     "gatsby-plugin-typography": "1.7.19",
+    "gatsby-source-stripe": "^2.0.5",
     "gray-percentage": "^2.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

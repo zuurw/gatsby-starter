@@ -84,6 +84,13 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-offline`,
+		{
+			resolve: `gatsby-source-stripe`,
+			options: {
+				objects: [],
+				secretKey: `<your stripe secret key>`,
+			}
+		},
   ],
 	siteMetadata: sitesConfig.sites[`default`].siteMetadata,
 }
