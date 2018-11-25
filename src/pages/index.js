@@ -2,6 +2,7 @@ import Bio from '../components/bio'
 import HtmlHead from '../components/htmlhead'
 import Layout from '../components/layout'
 import React from 'react'
+import AllSitePages from '../components/allsitepages';
 
 export const IndexMarkup = props => (
 	<Layout>
@@ -11,6 +12,7 @@ export const IndexMarkup = props => (
 		</header>
 		<main>
 			<Bio />
+			<AllSitePages />
 		</main>
 	</Layout>
 )
