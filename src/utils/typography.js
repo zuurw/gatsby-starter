@@ -23,12 +23,6 @@ const typography = new Typography(
 			body: {
 				color: gray(23, `warm`),
 			},
-			h1: scale(4 / 4),
-			h2: scale(3 / 4),
-			h3: scale(2 / 4),
-			h4: scale(1 / 6),
-			h5: scale(-1 / 6),
-			h6: scale(-2 / 6),
 			blockquote: {
 				...scale(1 / 4),
 				borderLeft: `${rhythm(1 / 6)} solid #eceeef`,
@@ -41,10 +35,29 @@ const typography = new Typography(
 				marginBottom: 0,
 			},
 			'blockquote cite': {
-			...adjustFontSizeTo(options.baseFontSize),
+				...adjustFontSizeTo(options.baseFontSize),
 				color: gray(54, `204`),
 				fontWeight: options.bodyWeight,
 				fontStyle: `normal`,
+			},
+			footer: {
+				borderTop: `solid 1px`,
+				padding: rhythm(1 / 1),
+				fontSize:`60%`,
+				textAlign: `center`,
+			},
+			h1: scale(4 / 4),
+			h2: scale(3 / 4),
+			h3: scale(2 / 4),
+			h4: scale(1 / 6),
+			h5: scale(-1 / 6),
+			h6: scale(-2 / 6),
+			header: {
+				borderBottom: `solid 1px`,
+				padding: rhythm(1 / 1),
+			},
+			main: {
+				padding: rhythm(1 / 1),
 			}
 		})
 	}

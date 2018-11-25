@@ -87,8 +87,8 @@ module.exports = {
 		{
 			resolve: `gatsby-source-stripe`,
 			options: {
-				objects: [],
-				secretKey: `<your stripe secret key>`,
+				objects: [`Balance`],
+				secretKey: `sk_test_N5gHqJ1BCHIxPiSGfRbvmGtH`,
 			}
 		},
   ],
