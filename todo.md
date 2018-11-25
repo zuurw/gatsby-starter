@@ -1,8 +1,7 @@
 KEEP README.md up-to-date
 
-3.building unique 'sites' via environment variables at netlify
-1.client-only-paths plugin
-2.authentication (advanced tutorial)
+1. component which lists allsitepages, and provides links to each
+2. authentication (advanced tutorial)
 
 then install, for-each plugin, new plugins and tests found in scrum.works
 IF any plugin cannot be made 'generic' for the the starter, then pause
