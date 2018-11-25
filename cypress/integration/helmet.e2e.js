@@ -1,5 +1,5 @@
 const metaData = require(`../../gatsby-config`).siteMetadata
-const pages = require(`../../test-config`).pages
+const pages = require(`../../nav-config`).pages
 
 describe(`helmet component contains valid <head> markup`, () => {
 

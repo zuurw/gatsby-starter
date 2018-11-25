@@ -1,4 +1,4 @@
-const pageData = require(`../../test-config`).pages.fourOhFour
+const pageData = require(`../../nav-config`).pages.fourOhFour
 
 describe(`404 page`, () => {
 	it(`has appropriate layout markup`, () => {

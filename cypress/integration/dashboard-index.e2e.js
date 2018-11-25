@@ -1,5 +1,5 @@
 const metaData = require(`../../gatsby-config`).siteMetadata
-const pageData = require(`../../test-config`).pages.dashboard
+const pageData = require(`../../nav-config`).pages.dashboard
 
 describe(`Dashboard`, () => {
 	it(`has appropriate layout markup`, () => {

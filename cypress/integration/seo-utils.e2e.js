@@ -1,4 +1,4 @@
-const pages = require(`../../test-config`).pages
+const pages = require(`../../nav-config`).pages
 const uacode = `UA-125425021-1`
 
 describe(`gatsby-plugin-google-tagmanager`, () => {

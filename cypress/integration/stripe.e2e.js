@@ -1,4 +1,4 @@
-const pages = require(`../../test-config`).pages
+const pages = require(`../../nav-config`).pages
 
 describe(`stripe.js`, () => {
 	for (const pageData in pages) {

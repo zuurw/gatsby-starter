@@ -1,5 +1,5 @@
 const metaData = require(`../../gatsby-config`).siteMetadata
-const pageData = require(`../../test-config`).pages.home
+const pageData = require(`../../nav-config`).pages.home
 
 describe(`Homepage at baseUrl: `+ pageData.path, () => {
 	it(`has appropriate layout markup`, () => {
