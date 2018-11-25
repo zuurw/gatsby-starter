@@ -1,6 +1,6 @@
 KEEP README.md up-to-date
 
-1. component which lists allsitepages, and provides links to each
+1. take style out of typographyjs and put into layout component
 2. authentication (advanced tutorial)
 
 then install, for-each plugin, new plugins and tests found in scrum.works

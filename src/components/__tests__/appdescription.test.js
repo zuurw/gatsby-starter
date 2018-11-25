@@ -1,15 +1,15 @@
+import AppDescription from '../appdescription'
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { render } from 'react-testing-library'
-import Bio from '../bio'
 
-describe(`Bio`, () =>
+describe(`AppDescription`, () =>
   it(`renders correctly -- according to react-test-renderer`, () => {
-    const tree = renderer.create(<Bio />).toJSON()
+    const tree = renderer.create(<AppDescription />).toJSON()
     expect(tree).toMatchSnapshot()
   }),
   it(`renders correctly -- according to react-testing-library`, () => {
-    const { getByTestId } = render(<Bio />)
-    expect(getByTestId(`my-bio`)).toHaveTextContent(`This is a Gatsbyjs starter that`)
+    const { getByTestId } = render(<AppDescription />)
+    expect(getByTestId(`app-description`)).toHaveTextContent(`This is a Gatsbyjs starter that`)
   })
 )

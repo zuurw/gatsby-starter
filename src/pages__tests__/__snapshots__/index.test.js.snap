@@ -39,7 +39,7 @@ exports[`HomePage renders correctly 1`] = `
     <main>
       <section>
         <p
-          data-testid="my-bio"
+          data-testid="app-description"
         >
           This is a Gatsbyjs starter that ships with boilerplate Gatsby and a small collection of plugins to start a PWA with Google Analytics, Tag Manager, Manifest, SEO tools, Stripe for product listings and checkout, plus the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest & Cypress.
         </p>
