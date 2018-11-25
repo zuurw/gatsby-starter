@@ -3,7 +3,7 @@ const sitesConfig = {
 		default: {
 			siteMetadata: {
 				defaultTitle: `Hello world!`,
-				description: `Gatsby Starter Hello World for TDD`,
+				description: `Gatsby Starter Hello World`,
 				lang: `en`,
 				locale: `en-CA`,
 				icon: `src/images/512px-Home_font_awesome.svg.png`,
@@ -15,7 +15,7 @@ const sitesConfig = {
 		notDefault: {
 			siteMetadata: {
 				defaultTitle: `Hello other world!`,
-				description: `Gatsby Starter Hello World for TDD`,
+				description: `Gatsby Starter Hello World`,
 				lang: `en`,
 				locale: `en-CA`,
 				icon: `src/images/512px-Home_font_awesome.svg.png`,
@@ -76,6 +76,7 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
 		`gatsby-plugin-sitemap`,
+		`gatsby-plugin-stripe`,
 		{
 			resolve: `gatsby-plugin-typography`,
 			options: {
