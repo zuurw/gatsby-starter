@@ -37,11 +37,89 @@ exports[`HomePage renders correctly 1`] = `
       </h1>
     </header>
     <main>
-      <p
-        data-testid="my-bio"
-      >
-        It is nice to meet you!  I am Gatsby.
-      </p>
+      <section>
+        <p
+          data-testid="my-bio"
+        >
+          This is a Gatsbyjs starter that ships with boilerplate Gatsby and a small collection of plugins to start a PWA with Google Analytics, Tag Manager, Manifest, SEO tools, Stripe for product listings and checkout, plus the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest & Cypress.
+        </p>
+        <p>
+          A demo of this starter can be found at 
+          <a
+            href="//gatsby-starter.davesabine.com"
+          >
+            gatsby-starter.davesabine.com
+          </a>
+           and the full source code is at 
+          <a
+            href="//github.com/DavidSabine/gatsby-starter"
+          >
+            github.com/DavidSabine/gatsby-starter
+          </a>
+          .
+        </p>
+      </section>
+      <section>
+        <h2>
+          Notable Pages of this Starter
+        </h2>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              className=""
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              style={Object {}}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/404/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Custom 404 Error
+            </a>
+            : overrides the Gatsbyjs default 404
+          </li>
+          <li>
+            <a
+              href="/dashboard/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Dashboard
+            </a>
+            : a client-only path (not rendered as static HTML)
+            <ul>
+              <li>
+                <a
+                  href="/dashboard/login"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Login
+                </a>
+                : just a placeholder component
+              </li>
+              <li>
+                <a
+                  href="/dashboard/profile"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                >
+                  Profile
+                </a>
+                : just a placeholder component
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
   </div>
   <footer
@@ -49,7 +127,9 @@ exports[`HomePage renders correctly 1`] = `
     dangerouslySetInnerHTML={
       Object {
         "__html": "
-		<a rel=\\"license\\" href=\\"http://creativecommons.org/licenses/by-sa/4.0/\\"><img alt=\\"Creative Commons Licence\\" style=\\"border-width:0\\" src=\\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\\" /></a><br /><span xmlns:dct=\\"http://purl.org/dc/terms/\\" property=\\"dct:title\\">DavidSabine/gatsby-starter</span> by <a xmlns:cc=\\"http://creativecommons.org/ns#\\" href=\\"https://gatsby-starter.davesabine.com\\" property=\\"cc:attributionName\\" rel=\\"cc:attributionURL\\">David Sabine</a> is licensed under a <a rel=\\"license\\" href=\\"http://creativecommons.org/licenses/by-sa/4.0/\\">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct=\\"http://purl.org/dc/terms/\\" href=\\"https://github.com/DavidSabine/gatsby-starter\\" rel=\\"dct:source\\">https://github.com/DavidSabine/gatsby-starter</a>.
+		<a rel=\\"license\\" href=\\"//creativecommons.org/licenses/by-sa/4.0/\\"><img alt=\\"Creative Commons Licence\\" style=\\"border-width:0\\" src=\\"//i.creativecommons.org/l/by-sa/4.0/88x31.png\\" /></a><br />
+		<span xmlns:dct=\\"http://purl.org/dc/terms/\\" property=\\"dct:title\\">DavidSabine/gatsby-starter</span> by <a xmlns:cc=\\"http://creativecommons.org/ns#\\" href=\\"//davesabine.com\\" property=\\"cc:attributionName\\" rel=\\"cc:attributionURL\\">David Sabine</a> is licensed under a <a rel=\\"license\\" href=\\"//creativecommons.org/licenses/by-sa/4.0/\\">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />
+		Based on a work at <a xmlns:dct=\\"http://purl.org/dc/terms/\\" href=\\"//github.com/DavidSabine/gatsby-starter\\" rel=\\"dct:source\\">github.com/DavidSabine/gatsby-starter</a>.
 	",
       }
     }

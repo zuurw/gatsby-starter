@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllSitePages renders correctly -- according to react-test-renderer 1`] = `
+<section>
+  <h2>
+    Notable Pages of this Starter
+  </h2>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className=""
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={Object {}}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/404/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Custom 404 Error
+      </a>
+      : overrides the Gatsbyjs default 404
+    </li>
+    <li>
+      <a
+        href="/dashboard/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Dashboard
+      </a>
+      : a client-only path (not rendered as static HTML)
+      <ul>
+        <li>
+          <a
+            href="/dashboard/login"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Login
+          </a>
+          : just a placeholder component
+        </li>
+        <li>
+          <a
+            href="/dashboard/profile"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Profile
+          </a>
+          : just a placeholder component
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+`;
