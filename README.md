@@ -63,11 +63,6 @@ yarn test:e2e
 # will update as you edit code. It's awesome.
 
 
-# or to run end-to-end tests with Cypress, against the production build
-
-yarn test-prod:e2e
-
-
 # or, as with other starters, you can...
 
 yarn develop
@@ -143,6 +138,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ├── LICENSE
 
+├── nav-config.js
+
 ├── package-lock.json
 
 ├── package.json
@@ -158,6 +155,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 2. **`Test folders & files`** I have used a naming convention for Cypress tests: `a-name.e2e.js`.
 - That naming convention is not important. What *is* important is that the Cypress tests should not be named `something.test.js` or `something.spec.js`.  Doing so will cause Jest to run the tests and Jest will complain.
 - If you *really want* to use the `(test|spec).jsx?` naming convention, then edit the testRegex in the Jest setup in package.json so Jest knows to exclude the Cypress tests.
+
+3. **`nav-config.js`** is used by multiple *test.e2e.js files to iterate through the important pages of the site.  It could also be used to build a nav component.  It's a half-baked approach — an alternate approach might be to use graphql in the test files to iterate through allSitePages.
 
 ## 🎓 Learning Gatsby
 
