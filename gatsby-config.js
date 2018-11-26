@@ -12,18 +12,6 @@ const sitesConfig = {
 			 	twitterCreator: `@davesabine`
 			}
 		},
-		notDefault: {
-			siteMetadata: {
-				defaultTitle: `Hello other world!`,
-				description: `Gatsby Starter Hello World`,
-				lang: `en`,
-				locale: `en-CA`,
-				icon: `src/images/512px-Home_font_awesome.svg.png`,
-				siteUrl: `http://localhost`, //No trailing slash allowed
-				titleTemplate: `%s | Not Default!`,
-				twitterCreator: `@davesabine`
-			}
-		}
 	}
 }
 

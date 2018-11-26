@@ -1,11 +1,14 @@
-<h1 align="center">Gatsby 'Hello World' Starter by David Sabine</h1>
-<h2 align="center">Vanilla Gatsby (v2), <em>plus</em> PWA plugins, basic SEO plugins, and test tools: Jest &amp; Cypress</h2>
+<h1 align="center">Gatsby Starter by David Sabine</h1>
+<h2 align="center">Gatsby (v2) plus plugins for Google Analytics, Tag Manager, Manifest, SEO tools, Stripe, and automated-test tools preferred by the Gatsby core contributors: Jest &amp; Cypress.</h2>
  
-Kick off your project with this boilerplate. This starter ships with the main Gatsby files and the basic TDD/automated-test tools preferred by the Gatsby core contributors: Jest &amp; Cypress
+Basically, this started with [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world), then I added:
 
-Basically, This starter combines [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) with [the official testing guides](https://next.gatsbyjs.org/docs/testing/) and the SEO-related plugins to produce appropriate &lt;HEAD&gt; content and manifest, sitemap, and robots files.
+- test tools _a la_ [the official testing guides](https://next.gatsbyjs.org/docs/testing/)
+- PWA-related and SEO-related plugins to produce appropriate &lt;HEAD&gt; content and manifest, sitemap, and robots files
+- emotion and typography plugins for styled components
+- Stripe plugins to enable e-commerce features
+- and `gatsby-plugin-create-client-paths` to isolate an area of the site for dynamic (non-static) React app
   
-
 ## 🚀 Quick start
 
 1.  **Install the Gatsby CLI.**
@@ -28,7 +31,7 @@ Use the Gatsby CLI to create a new site, specifying this starter.
 
 # create a new Gatsby site using this starter
 
-gatsby new my-gatsby-site https://github.com/davidsabine/gatsby-starter
+gatsby new my-gatsby-site https://github.com/DavidSabine/gatsby-starter
 
 ```
 
@@ -69,6 +72,10 @@ yarn test-prod:e2e
 
 yarn develop
 
+# or
+
+yarn serve
+
 ```
 
 4.  **Open the source code and start editing!**
@@ -83,6 +90,14 @@ Open the `my-gatsby-site` directory in your code editor of choice and look for t
 
 Save your changes and the browser and test runners will update in real time!
 
+5.  **Make it yours**
+
+This starter uses some plugins which require an 'active' setup, such as for Google Analytics and Stripe.  So, I have used real API keys which you should replace with your own.  Specifically:
+
+- `gatsby-plugin-google-analytics` is currently using my UA code. Replace the value of `trackingId` in `gatsby-config.js` with your own UA code. (Login to Google Analytics and find or make your own web property.)
+- `gatsby-plugin-google-tagmanager` is currently using my own ID and Auth token.  Replace the values of `id`, `gtmAuth`, and `gtmPreview` with your own values. (Login to Google Tag Manager and find or make your own configuration.)
+- `gatsby-source-stripe` is currently using a secretKey for my `dev` environment at Stripe.  Replace the values of `objects` and `secretKey` with your own.  (Login to Stripe and find or make your own account.)
+- `gatsby-config.js` generally uses dummy values that I've made up.  Replace the values with your own.
 
 ## 🧐 What's inside?
 
