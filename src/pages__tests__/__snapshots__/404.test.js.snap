@@ -19,10 +19,23 @@ exports[`404 renders correctly 1`] = `
   flex: 1;
 }
 
+.emotion-0 header {
+  border-bottom: solid 1px;
+  padding: 3.24rem;
+}
+
+.emotion-0 main {
+  padding: 3.24rem;
+}
+
 .emotion-1 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  border-top: solid 1px;
+  padding: 3.24rem;
+  font-size: 75%;
+  text-align: center;
 }
 
 <div
