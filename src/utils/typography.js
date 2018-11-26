@@ -40,27 +40,15 @@ const typography = new Typography(
 				fontWeight: options.bodyWeight,
 				fontStyle: `normal`,
 			},
-			footer: {
-				borderTop: `solid 1px`,
-				padding: rhythm(1 / 1),
-				fontSize:`60%`,
-				textAlign: `center`,
-			},
 			h1: scale(4 / 4),
 			h2: scale(3 / 4),
 			h3: scale(2 / 4),
 			h4: scale(1 / 6),
 			h5: scale(-1 / 6),
 			h6: scale(-2 / 6),
-			header: {
-				borderBottom: `solid 1px`,
-				padding: rhythm(1 / 1),
-			},
-			main: {
-				padding: rhythm(1 / 1),
-			}
 		})
 	}
 )
 
 export default typography
+export const rhythm = typography.rhythm
